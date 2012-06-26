@@ -40,12 +40,12 @@ describe TicTacToe::Game do
   end
 
   describe '#has_winner?' do
-    it 'should return false when winner is X' do
+    it 'should return true when winner is X' do
       subject.should_receive(:winner).and_return('X')
       subject.has_winner?.should be_true
     end
 
-    it 'should return false when winner is 0' do
+    it 'should return true when winner is 0' do
       subject.should_receive(:winner).and_return('0')
       subject.has_winner?.should be_true
     end
