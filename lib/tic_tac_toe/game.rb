@@ -25,19 +25,11 @@ module TicTacToe
     end
 
     def finished?
-      if (has_winner? || !has_turns?)
-        true
-      else
-        false
-      end
+      has_winner? || !has_turns?
     end
 
     def has_turns?
-      if turns_left > 0
-        true
-      else
-        false
-      end
+      turns_left > 0
     end
 
     def print_turns
